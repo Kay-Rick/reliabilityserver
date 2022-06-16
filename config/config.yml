@@ -1,0 +1,11 @@
+#consulip: 192.168.1.10:8500
+consulip: 192.168.1.126:8500
+#nodesip: ["192.168.1.10","192.168.1.191", "192.168.1.194", "192.168.1.197", "192.168.1.200"]
+nodesip: ["192.168.1.126","192.168.1.147", "192.168.1.167", "192.168.1.170"]
+services: [{
+  name: "Information Fusion_metaApp",
+  image: "hanxi739/sdhv_images:1.1",
+  cmd: "./main",
+  weight: 1
+}]
+reliability: false

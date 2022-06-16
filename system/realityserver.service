@@ -1,0 +1,15 @@
+[Unit]
+Description=realityserver
+After=network.target
+
+[Service]
+Type=simple
+User=dang
+Restart=on-failure
+RestartSec=5s
+ExecStart=/home/dang/code/realityserver/system/rs.sh
+ExecReload=/home/dang/code/realityserver/system/rs.sh
+LimitNOFILE=1048576
+
+[Install]
+WantedBy=multi-user.target
